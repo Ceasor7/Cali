@@ -13,12 +13,12 @@ import {
 const App = () => {
   return (
      <BrowserRouter>
-    <main className='relative'>
+    <main className='absolute'>
       <Nav />
       <section>
         <Hero />
       </section>
-      <section className='padding-x py-10'>
+      <section className='padding-x mt-8 py-10'>
         <Description />
       </section>
         <section className="bg-pale-blue padding">
