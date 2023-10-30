@@ -57,22 +57,27 @@ export const services = [
 export const programs = [
     {
         imgURL: research,
+        title: "Research",
         prog: "CALI's research program aims evidence-based decision-making and contribute to the knowledge and understanding of the arts sector in Kenya."
     },
     {
        imgURL: training,
+       title: "Training",
         prog: "CALI's training workshops focus on building skills in areas such as arts management, fundraising, marketing and audience development, financial management, and strategic planning."
     },
     {
        imgURL: leadership,
+       title: "Leadership",
         prog: "CALI's leadership development programs aim to help emerging and established arts leaders build their skills and knowledge, deepen their understanding of the arts sector, and develop networks and connections with other arts professionals."
     },
     {
        imgURL: mentorship,
+       title: "Mentorship",
         prog: "CALI's mentorship and coaching programs pair emerging arts leaders with experienced mentors in the arts sector, providing one-on-one guidance and support to help emerging arts leaders develop their skills, build their networks, and navigate the challenges of working in the arts sector."
     },
     {
        imgURL: advocacy,
+       title: "Advocacy",
         prog: "CALI's advocacy and awareness-raising initiatives aim to raise public awareness of the importance of the arts and culture in Kenya, advocate for policies and funding that support the arts, and build partnerships and collaborations across sectors to support the growth and development of the arts sector. "
     }
 ];

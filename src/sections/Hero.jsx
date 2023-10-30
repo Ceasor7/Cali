@@ -10,59 +10,54 @@ const images = [
 ];
 
 const ImageSlider = () => {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((currentImage + 1) % images.length);
-    }, 5000);
+    // Function to automatically transition to the next image
+    const nextImage = () => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
 
-    return () => clearInterval(interval);
-  }, [currentImage]);
+    // Set an interval to change the image every 5 seconds (5000ms)
+    const imageInterval = setInterval(nextImage, 5000);
 
-  const prevImage = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
-  };
-
-  const nextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
-  };
+    // Clean up the interval when the component unmounts
+    return () => {
+      clearInterval(imageInterval);
+    };
+  }, []);
 
   return (
-    <div className="relative min-h-screen ">
-      <div className="w-full min-h-screen relative">
-        <img
-          src={images[currentImage]}
-          alt="Slider Image"
-          className="w-full h-[700px] object-cover"
-        />
-        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-          <div className="text-white text-center">
-          <h1 className='mt-10 font-palanquin text-4xl font-bold'>
-          <span className='xl:whitespace-nowrap relative pr-10 bg-coral-red rounded-full p-2'>
-            Creative Arts
-          </span>
-          <br />
-          <span className='text-coral-red inline-block pt-4'>Leadership</span> Institute
-        </h1>
-        <p className='text-base font-montserrat text-coral-red'>
-        Building a sustainable future for the arts
-        </p>
-        <p className='font-montserrat font-semibold text-coral-red text-base leading-8 mt-6 mb-14'>
-        Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
-        </p>  
-        <Button label='Enroll now' iconURL={arrowRight} className="mt-2" />    
-          </div>
-         
+    <section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+        <div className="text-white text-center">
+          <h1 className='mt-10 font-palanquin text-4xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
+            <span className="xl:whitespace-nowrap relative pr-10 text-coral-red p-2">
+              Creative Arts
+            </span>
+            <br />
+            <span className="text-coral-red inline-block pt-4">Leadership Institute</span> 
+          </h1>
+          <p className="text-base font-montserrat text-coral-red">
+            Building a sustainable future for the arts
+          </p>
+          <p className="font-montserrat font-semibold text-coral-red text-base leading-8 mt-6 mb-14">
+            Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
+          </p>
+          <Button label="Enroll now" iconURL={arrowRight} className="mt-2" />
         </div>
       </div>
-      <div className="absolute top-1/2 transform -translate-y-1/2 left-4 cursor-pointer" onClick={prevImage}>
-        &larr;
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 ">
+        <img
+          src={images[currentImageIndex]} 
+          alt="Slider Image"
+          className="max-h-150" 
+        />
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+          {/* Additional content or controls can be placed here */}
+        </div>
       </div>
-      <div className="absolute top-1/2 transform -translate-y-1/2 right-4 cursor-pointer" onClick={nextImage}>
-        &rarr;
-      </div>
-    </div>
+    </section>
   );
 };
 

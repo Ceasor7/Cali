@@ -7,8 +7,8 @@ const Programs = () => {
      id='programs'
      className='max-container'>
       <h3 className='font-palanquin text-center text-4xl font-bold'>
-        What Are Our
-        <span className='text-coral-red'>  Programs? </span>       
+        Our
+        <span className='text-coral-red'>  Programs </span>       
       </h3>
       <p className='m-auto mt-4 max-w-lg  text-center  font-montserrat text-base text-black'>
       CALI offers several programs to support the development of the arts sector in Kenya. These programs include training workshops, leadership development programs, mentorship and coaching, advocacy and awareness-raising initiatives, and a research program. 
@@ -21,6 +21,7 @@ const Programs = () => {
             key={index}
             feedback={review.prog}
             imgURL={review.imgURL}
+            title={review.title}
           />
         ))}
       </div>
