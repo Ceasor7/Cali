@@ -1,4 +1,5 @@
 import faith from './faith.jpg'
+import eman from './eman.jpg'
 import njoroge from './njoroge.jpg'
 import shikuku from './shikuku.jpg'
 import training from './training.jpg'
@@ -21,6 +22,7 @@ import degree14 from './degree14.svg'
 
 
 export {
+    eman,
     faith,
     njoroge,
     shikuku,

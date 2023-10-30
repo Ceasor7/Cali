@@ -1,5 +1,5 @@
 import { LogoID } from "../assets/images";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
@@ -19,16 +19,37 @@ const Footer = () => {
           <p className="mt-6 text-base leading-7 font-montserrat text-white sm:max-w-sm">
             Thank you for considering CALI as your partner in creative arts leadership development. We look forward to working with you to help you achieve your leadership goals and make a positive impact on the world.
           </p>
-          <div className="flex items-center gap-5 mt-8 hover:cursor-pointer">
-            {socialMedia.map((icon) => (
-              <div
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full hover:bg-slate-gray transition duration-300 ease-in-out"
-                key={icon.alt}
-              >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
-              </div>
-            ))}
-          </div>
+          <div className="flex items-center gap-5 mt-8">
+            <a href="https://www.facebook.com/profile.php?id=61552732195123"  className="hover:opacity-100 cursor-pointer">
+              <img
+                src="/facebook.gif"
+                alt="Facebook"
+                className="w-10 h-10 rounded-md"
+              />
+            </a>
+            <a href="https://x.com/Caliinstitute?t=oMH14klkkCMT8iKhHaxYCw&s=08"  className="hover:opacity-80 cursor-pointer">
+              <img
+                src="/instagram.gif"
+                alt="Instagram"
+                className="w-10 h-10 rounded-sm"
+              />
+            </a>
+            <a href="https://instagram.com/cali.institute?igshid=MzRlODBiNWFlZA==" className="hover:opacity-80 cursor-pointer">
+              <img
+                src="/twitter.gif"
+                alt="Twitter"
+                className="w-10 h-10 rounded-sm"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/creative-arts-management-institute-cali-58b93a297/" className="hover:opacity-80 cursor-pointer">
+              <img
+                src="/linkedin.gif"
+                alt="LinkedIn"
+                className="w-10 h-10 rounded-sm"
+              />
+            </a>
+</div>
+
         </div>
 
         
