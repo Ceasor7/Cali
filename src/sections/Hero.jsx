@@ -24,20 +24,21 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <section id="home" className="w-full flex xl:flex-row mt-8 flex-col justify-center min-h-screen gap-10 max-container">
-      <div className="relative ml-7 xl:w-2/5 flex flex-col justify-center w-full max-xl:padding-x pt-28">
+    <section id="home"
+     className="w-full flex xl:flex-row mt-8 flex-col justify-center text-center min-h-screen gap-10 max-container">
+      <div className="ml-7 xl:w-2/5 flex flex-col justify-center text-center sm:text-center pt-28 ">
         <div className="text-white text-center">
-          <h1 className='mt-1 font-palanquin text-4xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-            <span className="xl:whitespace-nowrap relative pr-10 text-black red p-2">
+          <h1 className='font-palanquin text-4xl max-sm:text-4xl max-sm:leading-9 font-bold text-black'>
+            <span className="whitespace-nowrap text-red p-2">
               Creative Arts
             </span>
             <br />
-            <span className="text-coral-red inline-block pt-4">Leadership Institute</span> 
+            <span className="text-coral-red pt-4">Leadership Institute</span> 
           </h1>
           <p className="text-base font-montserrat text-coral-red">
             Building a sustainable future for the arts
           </p>
-          <p className="font-montserrat font-semibold text-black text-base leading-8 mt-6 mb-5">
+          <p className="font-montserrat font-semibold text-black text-base leading-6 mt-3 mb-2">
             Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
           </p>
           <Button label="Enroll now" iconURL={arrowRight}  />
@@ -47,7 +48,7 @@ const ImageSlider = () => {
         <img
           src={images[currentImageIndex]} 
           alt="Slider Image"
-          className="h-250 sm:h-auto rounded-3xl" 
+          className="h-250 sm:h-auto rounded-3xl shadow-2xl sm:pr-0 pr-10 sm:pl-0 pl-10 sm:rounded-3xl sm:shadow-2xl" 
         />
       </div>
     </section>

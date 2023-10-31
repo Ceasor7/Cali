@@ -7,7 +7,7 @@ const ProgramsCard = ({ imgURL, title, feedback }) => {
       <img
         src={imgURL}
         alt='programs'
-        className=' rounded-full object-cover w-full h-auto mt-6'
+        className=' rounded-3xl object-cover w-full h-auto mt-6'
       />
       <p className="mt-5 font-palanquin text-xl leading-normal font-bold">{title}</p>
       <p className='mt-6'>{feedback}</p>

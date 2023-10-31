@@ -1,5 +1,5 @@
 import { Nav } from "./components";
-import { BrowserRouter } from 'react-router-dom';
+
 import {
   Footer,
   Hero,
@@ -12,10 +12,9 @@ import {
 
 const App = () => {
   return (
-     <BrowserRouter>
-    <main className='absolute'>
+    <main className='relative overflow-hidden'>
       <Nav />
-      <section>
+      <section className='overflow-x-hidden'>
         <Hero />
       </section>
       <section className='padding-x mt-8 py-10'>
@@ -37,7 +36,6 @@ const App = () => {
         <Footer />
       </section>
     </main>
-    </BrowserRouter>
   );
 };
 
