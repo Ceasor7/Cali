@@ -11,6 +11,7 @@ const DescriptionCard = ({ imgURL, label, subtext }) => {
         {subtext}
       </p>
     </div>
+    
   );
 };
 

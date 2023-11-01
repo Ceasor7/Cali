@@ -1,3 +1,4 @@
+import { Button } from '../components';
 
 
 const ProgramsCard = ({ imgURL, title, feedback }) => {
@@ -10,7 +11,8 @@ const ProgramsCard = ({ imgURL, title, feedback }) => {
         className=' rounded-3xl object-cover w-full h-auto mt-6'
       />
       <p className="mt-5 font-palanquin text-xl leading-normal font-bold">{title}</p>
-      <p className='mt-6'>{feedback}</p>
+      <p className='mt-6 mb-6'>{feedback}</p>
+      <Button label="More Details"  />
       
       </div>
     </div>

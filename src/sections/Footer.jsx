@@ -11,9 +11,9 @@ const Footer = () => {
             <img
               src={LogoID}
               alt="logo"
-              width={50}
-              height={10}
-              className="m-0"
+              width={90}
+              height={50}
+              className="m-0 rounded-2xl"
             />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white sm:max-w-sm">

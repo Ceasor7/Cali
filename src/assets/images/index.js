@@ -6,7 +6,7 @@ import training from './training.jpg'
 import mentorship from './mentorship.jpg'
 import advocacy from './advocacy.jpg'
 import leadership from './leadership.jpg'
-import LogoID from './LogoID.png'
+import LogoID from './LogoID.jpeg'
 import research from './research.jpg'
 
 

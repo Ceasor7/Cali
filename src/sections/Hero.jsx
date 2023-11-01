@@ -5,19 +5,19 @@ import { arrowRight } from '../assets/icons';
 const images = [
   {
     src: 'advocacy.jpg',
-    title: 'Advocacy Title',
+    title: 'Advocacy',
   },
   {
     src: 'mentorship.jpg',
-    title: 'Mentorship Title',
+    title: 'Mentorship',
   },
   {
     src: 'leadership.jpg',
-    title: 'Leadership Title',
+    title: 'Leadership',
   },
   {
     src: 'training.jpg',
-    title: 'Training Title',
+    title: 'Training',
   },
 ];
 
