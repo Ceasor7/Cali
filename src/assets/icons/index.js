@@ -8,10 +8,10 @@ import instagram from './instagram.svg'
 import support from './support.svg'
 import star from './star.svg'
 import twitter from './twitter.svg'
-import bullseye from './bullseye.svg'
-import paint from './paint.svg'
-import rocket from './rocket.svg'
+import bullseye from './bullseye.png'
+import paint from './paint.png'
 import linkedin from './linkedin.svg'
+import rocket from './rocket.png'
 
 export {
     arrowRight,
@@ -22,10 +22,10 @@ export {
     hamburger,
     instagram,
     support,
+    rocket,
     star,
     twitter,
-    rocket,
     paint,
     bullseye,
-    linkedin
+    linkedin,
 }

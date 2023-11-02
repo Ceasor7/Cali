@@ -3,7 +3,7 @@ import { Button } from '../components';
 
 const ProgramsCard = ({ imgURL, title, feedback }) => {
   return (
-    <div className='flex justify-center rounded-[20px] shadow-3xl p-11 items-center flex-col'>
+    <div className='flex justify-center rounded-[20px] shadow-3xl bg-white p-11 items-center flex-col'>
       <div className='max-w-sm text-center font-montserrat text-base text-black'>
       <img
         src={imgURL}

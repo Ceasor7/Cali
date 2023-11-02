@@ -1,6 +1,6 @@
 const OurTeamCard = ({ imgURL, name, role }) => {
   return (
-    <div className='flex flex-1 flex-col w-full pb-7 max-sm:w-full shadow-lg rounded-md items-center'>
+    <div className='flex flex-1 flex-col w-full pb-7 max-sm:w-full bg-gray-100 shadow-lg rounded-md items-center'>
       <img src={imgURL} alt={name} className='w-[290px] h-[282px] rounded-full' />
       <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-palanquin'>
         {name}

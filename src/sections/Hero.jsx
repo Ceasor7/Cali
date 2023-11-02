@@ -63,8 +63,8 @@ const ImageSlider = () => {
             className="h-250 rounded-2xl  sm:rounded-3xl sm:shadow-2xl"
           />
          <div className="absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-3xl sm:pr-0 pr-10 sm:pl-0 pl-10 bg-coral-red bg-opacity-100 text-white text-center p-2">
-      {images[currentImageIndex].title}
-    </div>
+              {images[currentImageIndex].title}
+           </div>
         </div>
       </div>
     </section>
