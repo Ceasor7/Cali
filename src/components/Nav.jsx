@@ -1,5 +1,6 @@
 import { logoff } from "../assets/images";
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 const Nav = () => {
@@ -51,9 +52,9 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <button className="font-montserrat leading-normal text-lg text-white bg-coral-red p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300">
+        <Link to="/contact" className="font-montserrat leading-normal text-lg text-white bg-coral-red p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300">
           Contact Us
-        </button>
+        </Link>
         <div className="md:hidden flex items-center" ref={menuRef} onClick={handleMenuClick}>
           <button
             className="inline-flex items-center justify-center p-2 rounded-md text-black md:text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"

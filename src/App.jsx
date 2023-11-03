@@ -1,41 +1,31 @@
-import { Nav } from "./components";
-
 import {
-  Footer,
-  Hero,
-  Subscribe,
-  Programs,
-  OurTeam,
-  CoreValues,
-  Description,
-} from "./sections";
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+
+
+const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <Home />,
+  },
+  {
+      path: "/contact",
+      element: <Contact />,
+  },
+  {
+      path: "*",
+      element: <div>404</div>,
+  },
+]);
 
 const App = () => {
   return (
-    <main className='relative overflow-hidden'>
-      <Nav />
-      <section className='overflow-x-hidden'>
-        <Hero />
-      </section>
-      <section className='padding-x mt-8 py-10 bg-pale-blue'>
-        <Description />
-      </section>
-        <section className="padding">
-          <CoreValues />
-        </section>   
-      <section className='bg-pale-blue padding'>
-        <Programs />
-      </section>
-      <section className='padding'>
-        <OurTeam />
-      </section>          
-      <section className=' padding-x sm:py-32 py-16 w-full'>
-        <Subscribe />
-      </section>
-      <section className=' bg-black padding-x padding-t pb-8'>
-        <Footer />
-      </section>
-    </main>
+    <div className="App">
+        <RouterProvider router={router} />
+    </div>
   );
 };
 
