@@ -23,16 +23,21 @@ const images = [
 
 const ImageSlider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
     const nextImage = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setFade(true); 
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(false); 
+      }, 100); 
     };
     const imageInterval = setInterval(nextImage, 4000);
     return () => {
       clearInterval(imageInterval);
     };
-  }, []);
+  }, [currentImageIndex]);
 
   return (
     <section
@@ -56,15 +61,15 @@ const ImageSlider = () => {
         </div>
       </div>
       <div className="relative xl:mt-10 xl:mr-10 flex-1 flex justify-center items-center pr-10 pb-0 pl-10 mt-0 sm:mt-0 sm:mb-8">
-        <div className="relative">
+      <div className="relative">
           <img
             src={images[currentImageIndex].src}
             alt="Slider Image"
-            className="h-250 rounded-2xl  sm:rounded-3xl sm:shadow-2xl"
+            className={`h-250 rounded-2xl sm:rounded-3xl sm:shadow-2xl transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
           />
-         <div className="absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-3xl sm:pr-0 pr-10 sm:pl-0 pl-10 bg-coral-red bg-opacity-100 text-white text-center p-2">
-              {images[currentImageIndex].title}
-           </div>
+          <div className={`absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-3xl sm:pr-0 pr-10 sm:pl-0 pl-10 bg-coral-red bg-opacity-100 text-white text-center p-2 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+            {images[currentImageIndex].title}
+          </div>
         </div>
       </div>
     </section>
