@@ -113,22 +113,22 @@ const Nav = () => {
         {isClick && (
           <div className="md:hidden" onClick={handleMenuClick}>
             <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 list-none">
-              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
+              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 md:px-6 text-center border-b-2 md:border-b-0 border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
                 <a href="/#home" onClick={toggleNavbar}>
                   Home
                 </a>
               </li>
-              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
+              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
                 <a href="/#programs" onClick={toggleNavbar}>
                   Programs
                 </a>
               </li>
-              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover-bg-transparent">
+              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 border-coral-red md:hover:text-coral-red hover:rounded-full md:hover-bg-transparent">
                 <a href="/#products" onClick={toggleNavbar}>
                   Our Team
                 </a>
               </li>
-              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover-bg-coral-red border-coral-red md:hover-text-coral-red hover:rounded-full md-hover-bg-transparent">
+              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 border-coral-red md:hover-text-coral-red hover:rounded-full md-hover-bg-transparent">
                 <a href="/contact" onClick={toggleNavbar}>
                   Contact Us
                 </a>

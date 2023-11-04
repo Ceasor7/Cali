@@ -51,10 +51,10 @@ const ImageSlider = () => {
             <br />
             <span className="text-coral-red">Leadership Institute</span>
           </h1>
-          <p className="text-lg font-montserrat text-coral-red ">
+          <p className="text-base max-sm:text-base font-montserrat text-coral-red ">
             Building a sustainable future for the arts
           </p>
-          <p className="font-montserrat font-semibold text-black text-base leading-6 mt-3 mb-2">
+          <p className="font-montserrat font-semibold text-black text-base leading-6 mt-3 mb-2 pl-5 pr-5">
             Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
           </p>
           <Button label="Enroll now" iconURL={arrowRight} />
@@ -67,7 +67,7 @@ const ImageSlider = () => {
             alt="Slider Image"
             className={`h-250 rounded-2xl sm:rounded-3xl sm:shadow-2xl transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
           />
-          <div className={`absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-3xl sm:pr-0 pr-10 sm:pl-0 pl-10 bg-coral-red bg-opacity-100 text-white text-center p-2 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+          <div className={`absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-3xl  bg-coral-red bg-opacity-100 text-white text-center p-2 ${fade ? 'opacity-0' : 'opacity-100'}`}>
             {images[currentImageIndex].title}
           </div>
         </div>
