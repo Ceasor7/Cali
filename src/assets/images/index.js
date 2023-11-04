@@ -1,5 +1,4 @@
 import faith from './faith.jpg'
-import eman from './eman.jpg'
 import njoroge from './njoroge.jpg'
 import shikuku from './shikuku.jpg'
 import training from './training.jpg'
@@ -8,6 +7,7 @@ import advocacy from './advocacy.jpg'
 import leadership from './leadership.jpg'
 import LogoID from './LogoID.jpeg'
 import research from './research.jpg'
+import WhiteLogo from './WhiteLogo.png'
 
 
 
@@ -22,7 +22,6 @@ import degree14 from './degree14.svg'
 
 
 export {
-    eman,
     faith,
     njoroge,
     shikuku,
@@ -32,6 +31,7 @@ export {
     training,
     LogoID,
     research,
+    WhiteLogo,
 
    
 
@@ -41,7 +41,5 @@ export {
 
 
     profile12,
-    degree14,
-
-    
+    degree14,    
 }

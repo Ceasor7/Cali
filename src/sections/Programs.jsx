@@ -6,7 +6,7 @@ const Programs = () => {
     <section
      id='programs'
      className='max-container'>
-     <div className="rounded-[20px] shadow-3xl bg-white p-11">
+     <div className="p-11">
      <h3 className='font-palanquin text-center text-4xl font-bold'>
         Our
         <span className='text-coral-red'>  Programs </span>       

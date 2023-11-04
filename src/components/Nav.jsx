@@ -1,6 +1,4 @@
 import { logoff } from "../assets/images";
-import { navLinks } from "../constants";
-import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 const Nav = () => {
@@ -40,21 +38,40 @@ const Nav = () => {
             />
           </a>
         )}
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          {navLinks.map((item) => (
-            <li key={item.label}>
-              <a
-                href={item.href}
-                className="font-montserrat leading-normal text-lg text-black hover:bg-coral-red hover:rounded-full hover:p-2 hover:text-white"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <Link to="/contact" className="font-montserrat leading-normal text-lg text-white bg-coral-red p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300">
-          Contact Us
-        </Link>
+                    <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+              <li>
+                <a
+                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  href="/#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  href="/#programs"
+                >
+                  Programs
+                </a>
+              </li>
+              <li>
+                <a
+                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  href="/#products"
+                >
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>       
         <div className="md:hidden flex items-center" ref={menuRef} onClick={handleMenuClick}>
           <button
             className="inline-flex items-center justify-center p-2 rounded-md text-black md:text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -97,17 +114,17 @@ const Nav = () => {
           <div className="md:hidden" onClick={handleMenuClick}>
             <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 list-none">
               <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
-                <a href="#home" onClick={toggleNavbar}>
+                <a href="/#home" onClick={toggleNavbar}>
                   Home
                 </a>
               </li>
               <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover:bg-transparent">
-                <a href="#programs" onClick={toggleNavbar}>
+                <a href="/#programs" onClick={toggleNavbar}>
                   Programs
                 </a>
               </li>
               <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-coral-red border-coral-red md:hover:text-coral-red hover:rounded-full md:hover-bg-transparent">
-                <a href="#products" onClick={toggleNavbar}>
+                <a href="/#products" onClick={toggleNavbar}>
                   Our Team
                 </a>
               </li>
