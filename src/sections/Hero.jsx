@@ -46,12 +46,12 @@ const ImageSlider = () => {
     >
       <div className=" xl:w-2/5 flex flex-col justify-center text-center sm:ml-11 pt-28 sm:pt-0">
         <div className="text-white text-center">
-          <h1 className="font-palanquin text-4xl max-sm:text-4xl max-sm:leading-9 font-bold text-black">
-            <span className="whitespace-nowrap text-red p-2">Creative Arts</span>
+          <h1 className="font-palanquin text-4xl font-semibold text-black">
+            <span className="text-black">Creative Arts</span>
             <br />
-            <span className="text-coral-red pt-4 max-sm:text-lg">Leadership Institute</span>
+            <span className="text-coral-red">Leadership Institute</span>
           </h1>
-          <p className="text-base max-sm:text-sm font-montserrat text-coral-red">
+          <p className="text-lg font-montserrat text-coral-red ">
             Building a sustainable future for the arts
           </p>
           <p className="font-montserrat font-semibold text-black text-base leading-6 mt-3 mb-2">
