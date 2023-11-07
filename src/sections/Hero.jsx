@@ -75,7 +75,7 @@ const ImageSlider = () => {
         </div>
       </div>
       <div
-        className="w-full lg:w-1/2 content-center"
+        className="w-full pt-12 md:pt-0 lg:w-1/2 content-center"
       >
         <div
           className="relative"

@@ -21,7 +21,7 @@ const CoreValues= () => {
         </div>
       </div>
 
-      <div className='flex-1 flex justify-center items-center'>
+      <div className='flex-1 flex justify-center items-center pt-16 md:pt-0'>
         <img
           src={degree14}
           alt='product detail'
