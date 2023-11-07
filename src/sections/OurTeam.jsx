@@ -4,8 +4,11 @@ import { OurTeamCard } from "../components";
 const OurTeam = () => {
   return (
     <section id='products' className='max-container max-sm:mt-12'>
-      <div className='flex flex-col justify-center text-center gap-5'>
-        <h2 className='text-4xl font-palanquin font-bold'>
+
+      {/* Is this id correct? */}
+      
+      <div className='flex flex-col justify-center text-center gap-6'>
+        <h2 className='text-4xl font-roboto font-bold'>
           Our <span className='text-coral-red'> Team </span>
         </h2>
       </div>

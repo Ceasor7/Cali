@@ -12,12 +12,12 @@ import {
 
 const Home = () => {
   return (
-    <main className='relative overflow-hidden'>
+    <main className='w-screen relative overflow-hidden'>
     <Nav />
-    <section className='overflow-x-hidden'>
+      <section className='overflow-x-hidden content-center'>
       <Hero />
     </section>
-    <section className='padding-x mt-8 py-10 bg-pale-blue'>
+    <section className=' h-content bg-coral-red py-8'>
       <Description />
     </section>
       <section className="padding">

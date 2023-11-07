@@ -39,10 +39,10 @@ const Nav = () => {
             />
           </a>
         )}
-                    <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+                    <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden text-base">
               <li>
                 <a
-                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
                   href="/#home"
                 >
                   Home
@@ -50,7 +50,7 @@ const Nav = () => {
               </li>
               <li>
                 <a
-                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
                   href="/#programs"
                 >
                   Programs
@@ -58,14 +58,14 @@ const Nav = () => {
               </li>
               <li>
                 <a
-                  className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
+                  className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300"
                   href="/#products"
                 >
                   Our Team
                 </a>
               </li>
               <li>
-              <button className="font-montserrat leading-normal text-lg text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300">
+              <button className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white duration-300">
         <Link to="/contact">
           Contact Us
           </Link>
