@@ -5,7 +5,7 @@ const OurTeamCard = ({ imgURL, name, role }) => {
       <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-roboto'>
         {name}
       </h3>
-      <p className='mt-2 text-center font-montserrat text-coral-red text-xl leading-normal'>
+      <p className='mt-2 text-center font-montserrat text-[#cd2d00] text-base leading-normal'>
         {role}
       </p>
     </div>

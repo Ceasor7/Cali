@@ -9,7 +9,7 @@ const Programs = () => {
       <div className="py-8">
         <h3 className='font-palanquin text-center text-4xl font-bold'>
           Our
-          <span className='text-coral-red'>  Programs </span>
+          <span className='text-[#cd2d00]'>  Programs </span>
         </h3>
         <p className='m-auto mt-4 max-w-lg text-center font-montserrat text-base text-black'>
           CALI offers several programs to support the development of the arts sector in Kenya. These programs include training workshops, leadership development programs, mentorship and coaching, advocacy and awareness-raising initiatives, and a research program.

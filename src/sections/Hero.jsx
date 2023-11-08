@@ -27,11 +27,11 @@ const ImageSlider = () => {
 
   useEffect(() => {
     const nextImage = () => {
-      setFade(true);
+      setFade(true); 
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setFade(false);
-      }, 100);
+        setFade(false); 
+      }, 300); 
     };
     const imageInterval = setInterval(nextImage, 4000);
     return () => {
@@ -42,15 +42,11 @@ const ImageSlider = () => {
   return (
     <section
       id="home"
-      className="flex flex-col px-12 py-24 mt-32 lg:flex-row content-center"
+      className="w-full flex xl:flex-row flex-col px-12 py-24 mt-4 lg:flex-row content-center max-container"
     >
-      <div
-        className="w-full lg:w-1/2 flex-wrap content-center"
-      >
-        <div
-          className=""
-        >
-          <h1
+      <div className=" w-full lg:w-1/2 flex flex-col mt-20 ">
+        <div className="text-white">
+        <h1
             className="font-roboto text-4xl font-semibold text-black"
           >
             <span
@@ -58,7 +54,7 @@ const ImageSlider = () => {
             </span>
             <br />
             <span
-              className="text-coral-red">Leadership Institute
+              className="text-[#cd2d00]">Leadership Institute
             </span>
           </h1>
           <p
@@ -75,7 +71,7 @@ const ImageSlider = () => {
         </div>
       </div>
       <div
-        className="w-full pt-12 md:pt-0 lg:w-1/2 content-center"
+        className="w-full pt-12 mt-11 md:pt-0 lg:w-1/2 content-center"
       >
         <div
           className="relative"
@@ -86,7 +82,7 @@ const ImageSlider = () => {
             className={`rounded h-250 transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}
           />
           <div
-            className={`absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-2xl  bg-coral-red bg-opacity-100 text-white text-center p-2 ${fade ? 'opacity-0' : 'opacity-100'}`}
+            className={`absolute font-montserrat font-semibold text-sm bottom-4 left-1/2 transform -translate-x-1/2 w-2/5 rounded-2xl  bg-[#cd7e01] bg-opacity-100 text-white text-center p-2 ${fade ? 'opacity-0' : 'opacity-100'}`}
           >
             {images[currentImageIndex].title}
           </div>

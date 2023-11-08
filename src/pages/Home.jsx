@@ -12,27 +12,27 @@ import {
 
 const Home = () => {
   return (
-    <main className='w-screen relative overflow-hidden'>
+    <main className='relative overflow-hidden'>
     <Nav />
-      <section className='overflow-x-hidden content-center'>
+      <section className='overflow-x-hidden'>
       <Hero />
     </section>
-    <section className=' h-content bg-coral-red py-8'>
+    <section className=' h-content bg-[#cd7e01] py-10'>
       <Description />
     </section>
-      <section className="padding">
+    <section className="padding">
         <CoreValues />
       </section>   
-    <section className='bg-pale-blue padding'>
+    <section className='bg-[#cd7e01] padding'>
       <Programs />
     </section>
     <section className='padding'>
       <OurTeam />
     </section>          
-    <section className=' padding-x sm:py-32 py-16 w-full'>
+    <section className='padding-x sm:py-32 py-16 w-full'>
       <Subscribe />
     </section>
-    <section className=' bg-black padding-x padding-t pb-8'>
+    <section className=' bg-[#dcde39] padding-x padding-t pb-8'>
       <Footer />
     </section>
   </main>

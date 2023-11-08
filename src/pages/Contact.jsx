@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="w-full max-w-md mx-auto">
             <h3 className='font-palanquin text-center text-4xl font-bold'>
             Contact
-            <span className='text-coral-red'>  Us </span>       
+            <span className='text-[#cd2d00]'>  Us </span>       
           </h3>
           <div className="w-full flex flex-col my-4">
             <label className="font-bold text-gray-800" htmlFor="name">
@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="px-4 py-2 w-40 bg-coral-red disabled:bg-gray-400 disabled:text-gray-100 text-white font-montserrat font-semibold leading-normal rounded-lg mt-4"
+            className="px-4 py-2 w-40 bg-[#cd7e01] disabled:bg-gray-400 disabled:text-gray-100 text-white font-montserrat font-semibold leading-normal rounded-lg mt-4"
           >
             Send Message
           </button>
