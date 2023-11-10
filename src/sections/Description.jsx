@@ -3,8 +3,8 @@ import { DescriptionCard } from "../components";
 
 const Services = () => {
   return (
+    <div  id="aboutus">
     <section
-    id="aboutus"
      className=' flex justify-center flex-wrap gap-9 py-2 px-12 my-1'>
       <div className='flex flex-col justify-center text-center gap-6'>
         <h2 className='text-4xl font-roboto font-bold'>
@@ -18,6 +18,8 @@ const Services = () => {
       </div>
      
     </section>
+    </div>
+   
   );
 };
 

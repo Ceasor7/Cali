@@ -63,7 +63,7 @@ const ImageSlider = () => {
             Building a sustainable future for the arts
           </p>
           <p
-            className="font-roboto font-semibold text-slate-700 text-base leading-6 mt-3 mb-2 pb-6 pr-5"
+            className="font-montserrat font-semibold text-black text-base leading-6 mt-3 mb-2 pb-6 pr-5"
           >
             Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
           </p>

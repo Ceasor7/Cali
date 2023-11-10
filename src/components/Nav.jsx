@@ -3,6 +3,7 @@ import { logoff } from "../assets/images";
 import { useState, useRef, useEffect } from "react";
 
 const Nav = () => {
+  
   const [isClick, setIsClick] = useState(false);
   const menuRef = useRef(null);
 
@@ -67,7 +68,7 @@ const Nav = () => {
               <li>
                 <a
                   className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#cd7e01] hover:text-white duration-300"
-                  href="/#products"
+                  href="/#ourteam"
                 >
                   Our Team
                 </a>

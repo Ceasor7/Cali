@@ -1,4 +1,5 @@
 import { Nav } from "../components";
+import { motion, AnimatePresence } from "framer-motion";
 
 import {
   Footer,
@@ -14,7 +15,14 @@ const Home = () => {
   return (
     <main className='relative overflow-hidden'>
     <Nav />
-      <section className='overflow-x-hidden'>
+    <AnimatePresence>
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 15 }}
+      transition={{ duration: 0.5 }}
+      >
+    <section className='overflow-x-hidden'>
       <Hero />
     </section>
     <section className=' h-content bg-[#cd7e01] py-10'>
@@ -32,6 +40,8 @@ const Home = () => {
     <section className='padding-x sm:py-32 py-16 w-full'>
       <Subscribe />
     </section>
+    </motion.div>
+    </AnimatePresence>
     <section className=' bg-[#dcde39] padding-x padding-t pb-8'>
       <Footer />
     </section>
