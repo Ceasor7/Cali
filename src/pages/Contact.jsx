@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div>
       <Nav />
-      <form className="pt-28 pl-7 pr-7 pb-7">
+      <form className="pt-7 pl-7 pr-7 pb-7">
         <div className="w-full max-w-md mx-auto">
             <h3 className='font-palanquin text-center text-4xl font-bold'>
             Contact
@@ -57,7 +57,7 @@ export default function Contact() {
         </div>
         </div>
       </form>
-      <section className=' bg-[#dcde39] padding-x padding-t pb-8'>
+      <section className=' bg-[#232323] padding-x padding-t pb-8 text-white'>
       <Footer />
     </section>
     </div>

@@ -8,6 +8,7 @@ import leadership from './leadership.jpg'
 import research from './research.jpg'
 import WhiteLogo from './WhiteLogo.png'
 import LogoID from './LogoID.png'
+import kevin from './kevin.jpg'
 
 
 
@@ -15,8 +16,6 @@ import footerLogo from './footer-logo.svg'
 import headerLogo from './header-logo.svg'
 import logoff from './logoff.svg'
 
-
-import profile12 from './profile12.svg'
 import degree14 from './degree14.svg'
 
 
@@ -32,6 +31,7 @@ export {
     research,
     WhiteLogo,
     LogoID,
+    kevin,
 
    
 
@@ -39,7 +39,5 @@ export {
     headerLogo,
     logoff,
 
-
-    profile12,
     degree14,    
 }

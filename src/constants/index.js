@@ -1,5 +1,5 @@
 import { facebook, instagram, bullseye, paint, rocket, twitter, linkedin } from "../assets/icons";
-import { profile12,faith, njoroge, shikuku  } from "../assets/images";
+import { kevin,faith, njoroge, shikuku  } from "../assets/images";
 import { research, advocacy, mentorship, leadership, training } from "../assets/images";
 
 export const navLinks = [
@@ -14,7 +14,7 @@ export const navLinks = [
 
 export const teams = [
     {
-        imgURL: profile12,
+        imgURL: kevin,
         name: "Kevin Kimani Kahuro",
         role: "Chief Executive Officer",
     },

@@ -5,7 +5,7 @@ const CoreValues= () => {
   return (
     <section
       id='core-values'
-      className='flex justify-between items-center max-lg:flex-col gap-6 '
+      className='flex justify-between items-center max-lg:flex-col gap-6 scroll-smooth '
     >
     <div className='flex-1 flex justify-center items-center pt-16 md:pt-0'>
         <img

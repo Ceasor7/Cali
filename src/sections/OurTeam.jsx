@@ -6,7 +6,7 @@ const OurTeam = () => {
   
   return (
     
-      <section id='ourteam' className='max-container max-sm:mt-12'>      
+      <section id='ourteam' className='max-container max-sm:mt-12 scroll-smooth'>      
       <div className='flex flex-col justify-center text-center gap-6'>
         <h2 className='text-4xl font-roboto font-bold'>
           Our <span className='text-[#cd2d00]'> Team </span>

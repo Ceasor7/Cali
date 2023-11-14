@@ -42,9 +42,9 @@ const ImageSlider = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col px-12 py-14 lg:flex-row content-center max-container"
+      className="w-full flex xl:flex-row flex-col px-12 py-14 lg:flex-row content-center max-container scroll-smooth"
     >
-      <div className=" w-full pt-7 lg:w-1/2 flex flex-col ">
+      <div className=" w-full pt-7 lg:w-1/2 flex flex-col mt-6 ">
         <div className="text-white">
         <h1
             className="font-roboto text-4xl font-semibold text-black"

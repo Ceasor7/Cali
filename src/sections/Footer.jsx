@@ -22,7 +22,10 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-5 mt-8">
           <FramerMagnetic>
-          <a href="https://www.facebook.com/profile.php?id=61552732195123"  className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          <a href="https://www.facebook.com/profile.php?id=61552732195123"
+          rel="noopener noreferrer"
+           target="_blank"  
+           className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               <img
                 src="/facebook.svg"
                 alt="Facebook"
@@ -31,7 +34,10 @@ const Footer = () => {
             </a>
           </FramerMagnetic>
            <FramerMagnetic>
-           <a href="https://x.com/Caliinstitute?t=oMH14klkkCMT8iKhHaxYCw&s=08"  className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+           <a href="https://instagram.com/cali.institute?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               <img
                 src="/instagram.svg"
                 alt="Instagram"
@@ -39,8 +45,11 @@ const Footer = () => {
               />
             </a>
            </FramerMagnetic>
-           <FramerMagnetic>
-           <a href="https://instagram.com/cali.institute?igshid=MzRlODBiNWFlZA==" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+           <FramerMagnetic> 
+           <a href="https://x.com/Caliinstitute?t=oMH14klkkCMT8iKhHaxYCw&s=08"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               <img
                 src="/twitter.svg"
                 alt="Twitter"
@@ -49,7 +58,10 @@ const Footer = () => {
             </a>
            </FramerMagnetic>
            <FramerMagnetic>
-           <a href="https://www.linkedin.com/in/creative-arts-management-institute-cali-58b93a297/" className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+           <a href="https://www.linkedin.com/in/creative-arts-management-institute-cali-58b93a297/"
+           rel="noopener noreferrer"
+          target="_blank"
+          className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
               <img
                 src="/linkedin.svg"
                 alt="LinkedIn"
@@ -57,8 +69,7 @@ const Footer = () => {
               />
             </a>
            </FramerMagnetic>            
-</div>
-
+            </div>
         </div>
 
         

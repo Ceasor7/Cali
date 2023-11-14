@@ -5,7 +5,7 @@ const Programs = () => {
   return (
     <section
       id='programs'
-      className='max-container'>
+      className='max-container scroll-smooth'>
       <div className="py-8">
         <h3 className='font-roboto text-white text-center text-4xl font-medium'>
           Our

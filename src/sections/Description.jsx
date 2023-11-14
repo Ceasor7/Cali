@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div  id="aboutus">
     <section
-     className='flex justify-center flex-wrap gap-9 py-2 px-12 my-1'>
+     className='flex justify-center flex-wrap gap-9 py-2 px-12 my-1 scroll-smooth'>
       <div className='flex flex-col justify-center text-center gap-6'>
           <h2 className='text-4xl font-roboto font-medium text-white'>
           About <span className='text-white'> Us </span>

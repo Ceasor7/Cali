@@ -13,7 +13,7 @@ import {
 
 const Home = () => {
   return (
-    <main className='relative overflow-hidden'>
+    <main className='relative overflow-hidden scroll-smooth'>
     <Nav />
     <AnimatePresence>
     <motion.div
