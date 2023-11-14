@@ -27,7 +27,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x py-8 fixed top-0 left-0 right-0 bg-pale-blue z-10">
+    <header className="padding-x py-8 bg-pale-blue z-10">
       <nav className="flex justify-between items-center max-container">
         {!isClick && ( 
           <a href="/">

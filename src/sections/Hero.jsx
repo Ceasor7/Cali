@@ -42,9 +42,9 @@ const ImageSlider = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col px-12 py-24 mt-4 lg:flex-row content-center max-container"
+      className="w-full flex xl:flex-row flex-col px-12 py-14 lg:flex-row content-center max-container"
     >
-      <div className=" w-full lg:w-1/2 flex flex-col mt-20 ">
+      <div className=" w-full pt-7 lg:w-1/2 flex flex-col ">
         <div className="text-white">
         <h1
             className="font-roboto text-4xl font-semibold text-black"
@@ -67,11 +67,14 @@ const ImageSlider = () => {
           >
             Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
           </p>
+          
           <Button label="Enroll now" iconURL={arrowRight} />
+      
+          
         </div>
       </div>
       <div
-        className="w-full pt-12 mt-11 md:pt-0 lg:w-1/2 content-center"
+        className="w-full pt-5 lg:w-1/2 content-center"
       >
         <div
           className="relative"
