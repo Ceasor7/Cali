@@ -12,7 +12,7 @@ const ProgramsCard = ({ imgURL, title, feedback }) => {
       />
       <p className="mt-6 font-roboto uppercase text-3xl leading-normal font-medium">{title}</p>
       <p className='my-6'>{feedback}</p>
-      <Button label="More Details"  />
+      {/* <Button label="More Details"  /> */}
       
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '../components';
 import { arrowRight } from '../assets/icons';
+import { Link } from "react-router-dom";
 
 const images = [
   {
@@ -63,13 +64,14 @@ const ImageSlider = () => {
             Building a sustainable future for the arts
           </p>
           <p
-            className="font-montserrat font-semibold text-black text-base leading-6 mt-2 pb-3 pr-5"
+            className="font-montserrat font-semibold text-black text-base leading-6 mt-2 mb-6 pb-3 pr-5"
           >
             Welcome to the Creative Arts Leadership Institute (CALI), a premier leadership development organization focused on empowering creative professionals to lead with vision, purpose, and impact.
           </p>
           
-          <Button label="Button" iconURL={arrowRight} />
-      
+          <Link to="/contact" className='text-white bg-[#cd7e01] px-7 py-4 rounded-full'>
+            Contact Us
+          </Link>      
           
         </div>
       </div>

@@ -26,7 +26,7 @@ const CoreValues= () => {
 
         </p>
         <div className='mt-8'>
-          <Button label='More Details' />
+          {/* <Button label='More Details' /> */}
         </div>
       </div>
     </section>
