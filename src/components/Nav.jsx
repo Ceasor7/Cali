@@ -29,7 +29,6 @@ const Nav = () => {
   return (
     <header className="padding-x py-8 bg-pale-blue z-10 sticky top-0">
       <nav className="flex justify-between items-center max-container">
-        {!isClick && ( 
           <a href="/">
             <img
               src={logoff}
@@ -38,9 +37,8 @@ const Nav = () => {
               height={35}
               className="m-0 w-[50] h-[10]"
             />
-          </a>
-        )}
-                    <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden text-base">
+          </a>    
+             <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden text-base">
               <li>
                 <a
                   className="font-montserrat leading-normal text-black p-2 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#cd7e01] hover:text-white duration-300"

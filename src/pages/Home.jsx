@@ -1,5 +1,6 @@
 import { Nav } from "../components";
 import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import {
   Footer,
@@ -12,9 +13,27 @@ import {
 } from "../sections";
 
 const Home = () => {
+
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const shouldShowNavbar = scrollY === 0 || scrollY < 50;
+      setNavbarVisible(shouldShowNavbar);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <main className='relative overflow-hidden scroll-smooth'>
-    <Nav />
+    {navbarVisible && <Nav />}
     <AnimatePresence>
     <motion.div
       initial={{ opacity: 0, y: 15 }}
