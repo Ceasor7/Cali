@@ -53,7 +53,7 @@ export default function Contact() {
             />
           </div>
           <div className='mt-11'>
-          <Button label='More Details' />
+          <Button label='Send' />
         </div>
         </div>
       </form>
