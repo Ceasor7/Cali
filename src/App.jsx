@@ -1,31 +1,22 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home/Home";
+import Contact from "./pages/contact/Contact";
+import { Nav } from "./components";
+import { Footer } from "./sections";
 
-
-
-
-
-const router = createBrowserRouter([
-  {
-      path: "/",
-      element: <Home />,
-  },
-  {
-      path: "/contact",
-      element: <Contact />,
-  }
-]);
-
-const App = () => {
+function App() {
   return (
-    <div className="App">
-        <RouterProvider router={router} />
+    <div>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
     </div>
   );
-};
+}
 
 export default App;

@@ -1,10 +1,10 @@
-import { Button, Nav } from "../components";
-import { Footer } from "../sections";
+import emailjs from 'emailjs-com'
 
-export default function Contact() {
+
+
+const Contact = () => {
   return (
     <div>
-      <Nav />
       <form className="pt-7 pl-7 pr-7 pb-7">
         <div className="w-full max-w-md mx-auto">
             <h3 className='font-palanquin text-center text-4xl font-bold'>
@@ -62,7 +62,7 @@ export default function Contact() {
               Message
             </label>
             <textarea
-            placeholder="Type your Message"
+              placeholder="Type your Message"
               rows={6}
               required
               minLength={2}
@@ -72,13 +72,16 @@ export default function Contact() {
             />
           </div>
           <div className='mt-11'>
-          <Button label='Send' />
+          <button 
+          type="submit"
+          className="gap-2 px-7 py-4 border font-montserrat leading-none bg-[#cd7e01] text-white border-[#cd7e01] rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#cd2d00] hover:text-white duration-300">
+          Send
+        </button>
         </div>
         </div>
       </form>
-      <section className=' bg-[#232323] padding-x padding-t pb-8 text-white'>
-      <Footer />
-    </section>
     </div>
   );
 }
+
+export default Contact;

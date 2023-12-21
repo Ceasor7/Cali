@@ -4,7 +4,7 @@ import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="max-container">
+    <footer className="bg-[#232323] padding-x padding-t pb-8 text-white">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-20 ">
       
         <div className="flex flex-col items-start">
