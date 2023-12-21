@@ -13,8 +13,6 @@ const Contact = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    setIsLoading(true)
-
     emailjs.sendForm('service_zf8zxfa', 'template_t4j6rw6', form.current, 'ExgvEE7Vv3Uf7xor_')
     .then((result) => {
       console.log(result.text);
@@ -105,7 +103,6 @@ const Contact = () => {
           <div className='mt-11'>
           <button 
           type="submit"
-          disabled={isLoading}
           className="gap-2 px-7 py-4 border font-montserrat leading-none bg-[#cd7e01] text-white border-[#cd7e01] rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#cd2d00] hover:text-white duration-300">
            {isLoading ? "Loading..." : "Send"}
           <ToastContainer />
