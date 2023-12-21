@@ -141,11 +141,11 @@ const Nav = () => {
                   Our Team
                 </a>
               </li>
-              <li className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 border-[#cd7e01] md:hover-text-[#cd2d00] hover:rounded-full md-hover-bg-transparent">
-                <a href="/contact" onClick={toggleNavbar}>
+              <button className="pb-6 font-montserrat leading-normal text-base text-black py-2 px-6 text-center border-b-2 md:border-b-0 border-[#cd7e01] md:hover:text-[#cd2d00] hover:rounded-full md:hover-bg-transparent">
+                <Link to="/contact" onClick={toggleNavbar}>
                   Contact Us
-                </a>
-              </li>
+                  </Link>
+               </button>
             </ul>
           </div>
         )}
