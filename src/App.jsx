@@ -17,11 +17,7 @@ const router = createBrowserRouter([
   {
       path: "/contact",
       element: <Contact />,
-  },
-  {
-      path: "*",
-      element: <div>404</div>,
-  },
+  }
 ]);
 
 const App = () => {

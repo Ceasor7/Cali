@@ -17,6 +17,7 @@ export default function Contact() {
             </label>
             <input
               type="text"
+              placeholder="Name"
               minLength={3}
               maxLength={150}
               required
@@ -25,12 +26,14 @@ export default function Contact() {
               id="name"
             />
           </div>
+          
           <div className="w-full flex flex-col my-4">
             <label className="font-bold text-gray-800" htmlFor="email">
               Email
             </label>
             <input
               type="email"
+              placeholder="email"
               minLength={5}
               maxLength={150}
               required
@@ -39,14 +42,30 @@ export default function Contact() {
               id="email"
             />
           </div>
+          <div className="w-full flex flex-col my-4">
+            <label className="font-bold text-gray-800" htmlFor="subject">
+              Subject
+            </label>
+            <input
+              type="text"
+              placeholder="Subject"
+              minLength={3}
+              maxLength={150}
+              required
+              className="p-4 bg-gray-50 border border-gray-100"
+              autoComplete="off"
+              id="subject"
+            />
+          </div>
           <div>
             <label className="font-bold text-gray-800" htmlFor="message">
               Message
             </label>
             <textarea
-              rows={4}
+            placeholder="Type your Message"
+              rows={6}
               required
-              minLength={10}
+              minLength={2}
               maxLength={500}
               name="message"
               className="w-full p-4 bg-gray-50 border border-gray-100"
