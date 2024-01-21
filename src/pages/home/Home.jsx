@@ -1,12 +1,12 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import {
-  Hero,
-  Subscribe,
-  Programs,
-  OurTeam,
   CoreValues,
   Description,
+  Hero,
+  OurTeam,
+  Programs,
+  Subscribe
 } from "../../sections";
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
     </section>
     <section className='padding'>
       <OurTeam />
-    </section>          
+    </section>         
           <section className='padding-x sm:py-32 py-16 w-full bg-[#dcde39]'>
       <Subscribe />
     </section>

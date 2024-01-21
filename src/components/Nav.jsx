@@ -1,6 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { logoff } from "../assets/images";
-import { useState, useRef, useEffect } from "react";
 
 const Nav = () => {
   
@@ -27,7 +27,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x py-8 bg-pale-blue z-10 sticky top-0">
+    <header className="header shadow-md padding-x py-8 bg-pale-blue z-10 sticky top-0">
       <nav className="flex justify-between items-center max-container">
           <a href="/">
             <img

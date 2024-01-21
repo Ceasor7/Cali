@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./pages/home/Home";
-import Contact from "./pages/contact/Contact";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Nav } from "./components";
+import Contact from "./pages/contact/Contact";
+import Home from "./pages/home/Home";
 import { Footer } from "./sections";
 
 function App() {

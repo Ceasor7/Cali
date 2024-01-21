@@ -1,5 +1,4 @@
 import { degree14 } from "../assets/images";
-import { Button } from "../components";
 
 const CoreValues= () => {
   return (
