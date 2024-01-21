@@ -47,11 +47,11 @@ const Contact = () => {
             Contact
             <span className='text-[#cd2d00]'>  Us </span>       
           </h3>
-    <div>
-      <p className='text-center my-20 mx-40 text-wrap font-semibold font-montserrat'>
-      Reach out to CALI using any of our channels below. Please remember to state your name, contact information and a clear description of how we can be of assistance. We will be glad to engage.
-      </p>
-    </div>
+        <div>
+        <p className='text-center my-20 mx-4 md:mx-40 text-wrap font-semibold font-montserrat'>
+          Reach out to CALI using any of our channels below. Please remember to state your name, contact information and a clear description of how we can be of assistance. We will be glad to engage.
+        </p>
+      </div>
     <div className="flex flex-row text-center justify-center mb-10">
       <SocialIcon url="https://www.linkedin.com/in/creative-arts-management-institute-cali-58b93a297/" className='h-12 w-12' fgColor='#cd2d00' bgColor='transparent' />
       <SocialIcon url='https://x.com/Caliinstitute?t=oMH14klkkCMT8iKhHaxYCw&s=08' className='h-12 w-12' fgColor='#cd2d00' bgColor='transparent'/>
