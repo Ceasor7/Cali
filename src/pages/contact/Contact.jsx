@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-screen flex flex-col items-center'>
+    <div className='h-screen flex flex-col items-center overflow-x-hidden'>
       <h3 className='font-palanquin text-center text-4xl font-bold'>
         Contact
         <span className='text-[#cd2d00]'> Us </span>
@@ -79,9 +79,6 @@ const Contact = () => {
               />
             </a>
         </div>        
-            <div className='text-center font-semibold font-montserrat'>
-              <p>Email us: contact@cali.institute</p>
-            </div>
         </div>
       )}
     </div>
