@@ -1,14 +1,22 @@
+{/*
 import { useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+*/}
 
 const Contact = () => {
+  {/*
   const [capVal, setCapVal] = useState(null);
   const [showIcons, setShowIcons] = useState(false);
+ */}
+  
 
-  const handleRecaptchaChange = (val) => {
+  {/*
+    const handleRecaptchaChange = (val) => {
     setCapVal(val);
     setShowIcons(val !== null);
   };
+ */}
+  
 
   return (
     <div className='h-screen flex flex-col items-center overflow-x-hidden'>
@@ -21,11 +29,14 @@ const Contact = () => {
           Reach out to CALI using any of our channels below. Please remember to state your name, contact information, and a clear description of how we can be of assistance. We will be glad to engage.
         </p>
       </div>
-      <ReCAPTCHA
+      {/*
+        <ReCAPTCHA
         sitekey='6LdlEFgpAAAAAIpstgTDknjMYxjxmNW13Qrt-OxN'
         onChange={handleRecaptchaChange}
       />
-      {showIcons && (
+      */}
+      
+     {/* {showIcons && ( */}
         <div className="text-center justify-center mb-10">
         <div className='flex flex-row my-5'>
         <a href="https://www.facebook.com/profile.php?id=61552732195123"
@@ -80,7 +91,7 @@ const Contact = () => {
             </a>
         </div>        
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 }
