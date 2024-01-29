@@ -5,8 +5,7 @@ import {
   Description,
   Hero,
   OurTeam,
-  Programs,
-  Subscribe
+  Programs
 } from "../../sections";
 
 const Home = () => {
@@ -34,13 +33,8 @@ const Home = () => {
     <section className='padding'>
       <OurTeam />
     </section>         
-          <section className='padding-x sm:py-32 py-16 w-full bg-[#dcde39]'>
-      <Subscribe />
-    </section>
     </motion.div>
     </AnimatePresence>
-      <section className=' bg-[#232323] padding-x padding-t pb-8 text-white'>
-    </section>
   </main>
   )
 }

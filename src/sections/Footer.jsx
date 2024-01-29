@@ -1,13 +1,20 @@
 import { WhiteLogo } from "../assets/images";
 import { FramerMagnetic } from "../components";
-import { footerLinks } from "../constants";
 
 const Footer = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <footer className="bg-[#232323] padding-x padding-t pb-8 text-white">
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-20 ">
+    <footer className="bg-[#232323] sm:px-16 px-8 pt-10 pb-8 text-white">
+      <div className="flex flex-col justify-between items-start sm:items-center">
       
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col sm:flex-row sm:space-x-20 sm:ml-36 sm:justify-between sm:items-center items-start">
           <a href="/">
             <img
               src={WhiteLogo}
@@ -20,7 +27,7 @@ const Footer = () => {
           <p className="mt-6 text-base leading-7 font-montserrat sm:max-w-sm">
             Thank you for considering CALI as your partner in creative arts leadership development. We look forward to working with you to help you achieve your leadership goals and make a positive impact on the world.
           </p>
-          <div className="flex items-center gap-5 mt-8">
+          <div className="flex items-center  gap-5 mt-8">
           <FramerMagnetic>
           <a href="https://www.facebook.com/profile.php?id=61552732195123"
           rel="noopener noreferrer"
@@ -72,8 +79,31 @@ const Footer = () => {
             </div>
         </div>
 
-        
-        <div className="flex flex-col">
+      <div className="w-full flex flex-row justify-center mt-5 text-white text-center">
+      <p className="font-montserrat">Design by Creative Age</p>
+      <button
+        onClick={handleScrollToTop}
+        className="text-gray-300 hover:text-white focus:outline-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="h-6 w-6"
+        >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+      </button>
+      </div>
+       
+        {/*
+         <div className="flex flex-col">
           {footerLinks.slice(0, 1).map((section) => (
             <div key={section.title}>
               <h4 className="font-montserrat text-2xl leading-normal font-medium mb-6">
@@ -91,9 +121,12 @@ const Footer = () => {
               </ul>
             </div>
           ))}
-        </div>
+          </div>
+         */}
+        
 
         
+        {/*
         <div className="flex flex-col">
           {footerLinks.slice(1, 3).map((section) => (
             <div key={section.title}>
@@ -113,6 +146,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
+         */}
       </div>
     </footer>
   );
