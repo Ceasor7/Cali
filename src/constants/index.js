@@ -1,9 +1,8 @@
-import { facebook, instagram, bullseye, paint, rocket, twitter, linkedin } from "../assets/icons";
-import { kevin,faith, njoroge, shikuku  } from "../assets/images";
-import { research, advocacy, mentorship, leadership, training } from "../assets/images";
+import { bullseye, facebook, instagram, linkedin, paint, rocket, twitter } from "../assets/icons";
+import { advocacy, faith, kevin, leadership, mentorship, njoroge, research, shikuku, training } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label:"Home" },
+    { href: "/", label:"Home" },
     { href: "#programs", label: "Programs" },
     { href: "#products", label: "Our Team" },
 ];

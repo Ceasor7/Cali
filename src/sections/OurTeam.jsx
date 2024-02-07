@@ -1,5 +1,4 @@
-import { teams } from "../constants";
-import { OurTeamCard } from "../components";
+
 
 
 const OurTeam = () => {
@@ -14,10 +13,41 @@ const OurTeam = () => {
       </div>
       <div 
       className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
-        {teams.map((team) => (
-          <OurTeamCard key={team.name} {...team} />
-        ))}
+        <div className="group relative flex flex-col shadow-lg rounded-md items-center cursor-pointer">
+          <img
+          src="/kevin.jpg"
+          className="rounded-full border object-cover w-[290px] h-auto sm:h-auto sm:w-[290px]"
+          />
+          <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-roboto'> Name 1 </h3>
+          <p className='mt-2 text-center font-montserrat text-[#cd2d00] text-base leading-normal'>Title 1</p>
+        </div>
+        <div className="group relative flex flex-col shadow-lg rounded-md items-center cursor-pointer">
+          <img
+          src="/shikuku.jpg"
+          className="rounded-full border object-cover w-[290px] h-auto sm:h-auto sm:w-[290px]"
+          />
+          <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-roboto'> Name 1 </h3>
+          <p className='mt-2 text-center font-montserrat text-[#cd2d00] text-base leading-normal'>Title 1</p>
+        </div>
+        <div className="group relative flex flex-col shadow-lg rounded-md items-center cursor-pointer">
+          <img
+          src="/faith.jpg"
+          className="rounded-full border object-cover w-[290px] h-auto sm:h-auto sm:w-[290px]"
+          />
+          <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-roboto'> Name 1 </h3>
+          <p className='mt-2 text-center font-montserrat text-[#cd2d00] text-base leading-normal'>Title 1</p>
+        </div>
+        <div className="group relative flex flex-col shadow-lg rounded-md items-center cursor-pointer">
+          <img
+          src="/njoroge.jpg"
+          className="rounded-full border object-cover w-[290px] h-auto sm:h-auto sm:w-[290px]"
+          />
+          <h3 className='mt-2 text-2xl text-center leading-normal font-semibold font-roboto'> Name 1 </h3>
+          <p className='mt-2 text-center font-montserrat text-[#cd2d00] text-base leading-normal'>Title 1</p>
+        </div>
+        
       </div>
+      
     </section>
   
     
